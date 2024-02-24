@@ -22,8 +22,8 @@ def pregunta_01():
     40
 
     """
-    dataframe = len(tbl0)
-    return dataframe
+    tamaño = len(tbl0)
+    return tamaño
 
 
 def pregunta_02():
@@ -34,8 +34,8 @@ def pregunta_02():
     4
 
     """
-    dataframe=len(tbl0.columns)
-    return dataframe
+    tamaño_col=len(tbl0.columns)
+    return tamaño_col
 
 
 def pregunta_03():
@@ -174,7 +174,7 @@ def pregunta_10():
     3   D                  1:2:3:5:5:7
     4   E  1:1:2:3:3:4:5:5:5:6:7:8:8:9
     """
-    dataframe = tbl0.copy()
+    
     
     tbl0['_c2'] = tbl0['_c2'].map(str)
     tb = tbl0.pivot_table(values="_c2", index="_c1", aggfunc=sorted)
